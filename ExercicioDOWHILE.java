@@ -16,12 +16,17 @@ public class ExercicioDOWHILE {
 		numeros = leia.nextInt();
 		
 		do {
-			if(numeros%3==0) {
-				somaNum += numeros;
-				contNum++;
+			
+			if(numeros == 0) {
+				System.out.println("\nSair do loop");
+			}else {
+				if(numeros%3==0) {
+					somaNum += numeros;
+					contNum++;
+				}
+				System.out.println("\nEntre com um número: ");
+				numeros = leia.nextInt();
 			}
-			System.out.println("\nEntre com um número: ");
-			numeros = leia.nextInt();
 			
 		}while(numeros != 0);
 		
