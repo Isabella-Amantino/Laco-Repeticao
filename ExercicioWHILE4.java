@@ -16,10 +16,22 @@ public class ExercicioWHILE4 {
 			
 			System.out.println("\nEntre com a sua idade: ");
 			idade =leia.nextInt();
+			while(idade<1 || idade>120) {
+				System.out.println("\nEntre com a sua idade novamente: ");
+				idade = leia.nextInt();
+			}
 			System.out.println("\nEntre com gênero:\n(1)Feminino\n(2)Masculino\n(3)Não declarado");
 			genero =leia.nextInt();
+			while(genero<1 || genero>3) {
+				System.out.println("\nEntre com o genero novamente:\n(1)Feminino\n(2)Masculino\n(3)Não declarado ");
+				genero = leia.nextInt();
+			}
 			System.out.println("\nEntre com o seu fator psicológico:\n(1)Calma\n(2)Nervosa\n(3)Agressiva");
 			fp =leia.nextInt();
+			while(fp<1 || fp>3) {
+				System.out.println("\nEntre com o seu fator psicológico novamente:\n(1)Calma\n(2)Nervosa\n(3)Agressiva ");
+				fp = leia.nextInt();
+			}
 			
 			if(fp == 1) {
 				contPc++;
